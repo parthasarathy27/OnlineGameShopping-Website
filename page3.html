@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - More Games</title>
+    <link rel="icon" href="assets/logo.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/session.js"></script>
+</head>
+<body onload="updateTotal()">
+    <header class="bg-dark text-white text-center py-3">
+        <h1>🎮 More Games</h1>
+        <button class="btn btn-danger" onclick="logout()">Logout</button>
+    </header>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/game-13.jfif" class="card-img-top" alt="Game 7">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Half-Life 2</h5>
+                        <p class="card-text">₹3411</p>
+                        <button class="btn btn-success" onclick="addToCart('Half-Life 2', 3411)">Add to Cart</button>
+                        <button class="btn btn-danger" onclick="removeFromCart('Half-Life 2')">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/game-14.jfif" class="card-img-top" alt="Game 8">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Halo 2</h5>
+                        <p class="card-text">₹2327</p>
+                        <button class="btn btn-success" onclick="addToCart('Halo 2', 2327)">Add to Cart</button>
+                        <button class="btn btn-danger" onclick="removeFromCart('Halo 2')">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/game-15.jfif" class="card-img-top" alt="Game 9">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">League of Legends</h5>
+                        <p class="card-text">₹3809</p>
+                        <button class="btn btn-success" onclick="addToCart('League of Legends', 3809)">Add to Cart</button>
+                        <button class="btn btn-danger" onclick="removeFromCart('League of Legends')">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/game-16.jfif" class="card-img-top" alt="Game 10">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Minecraft</h5>
+                        <p class="card-text">₹3836</p>
+                        <button class="btn btn-success" onclick="addToCart('Minecraft', 3836)">Add to Cart</button>
+                        <button class="btn btn-danger" onclick="removeFromCart('Minecraft')">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/game-17.jfif" class="card-img-top" alt="Game 11">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Portal 2</h5>
+                        <p class="card-text">₹4806</p>
+                        <button class="btn btn-success" onclick="addToCart('Portal 2', 4806)">Add to Cart</button>
+                        <button class="btn btn-danger" onclick="removeFromCart('Portal 2')">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/game-18.jfif" class="card-img-top" alt="Game 12">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Super Mario 64</h5>
+                        <p class="card-text">₹198</p>
+                        <button class="btn btn-success" onclick="addToCart('Super Mario 64', 198)">Add to Cart</button>
+                        <button class="btn btn-danger" onclick="removeFromCart('Super Mario 64')">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="text-center my-3">Total Amount: <span id="total-price">₹0</span></h3>
+
+    <div class="container text-center my-4">
+        <a href="page2.html" class="btn btn-secondary">⬅ Previous Page</a>
+        <a href="page4.html" class="btn btn-primary">Proceed to Checkout ➡</a>
+    </div>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
