@@ -1,96 +1,119 @@
-# Online Shop Website Using HTML, CSS, and JavaScript (Session and Cookies)
+# **Online Shop Website Using HTML, CSS, and JavaScript (Session and Cookies)**  
 
-## Project Overview
+## **Project Overview**  
 
-This project involves developing a basic online shop website where users can browse products, add them to a shopping cart, and proceed to checkout. The website uses HTML for structure, CSS for styling, and JavaScript for session management and cookies to store the cart data. The system includes user authentication (login/logout functionality) to ensure secure access to the shopping pages.
+This project is a basic online shop website where users can browse products, add them to a shopping cart, and proceed to checkout. The website utilizes:  
 
-## Demo
+- **HTML** for structure  
+- **CSS** for styling and responsiveness  
+- **JavaScript** for session management and cookies to store cart data  
 
-You can check out the live demo of the project here:
+Additionally, it includes user authentication (login/logout functionality) to ensure secure access to the shopping pages.  
 
-[Online Game Shopping Website Demo](https://parthasarathy27.github.io/OnlineGameShopping-Website/index.html)
+---
 
-## Repository
+## **Demo**  
 
-The source code for the project is available at the following GitHub repository:
+Check out the live demo here:  
 
-[Online Game Shopping Website Repository](https://github.com/parthasarathy27/OnlineGameShopping-Website)
+[**Online Game Shopping Website Demo**](https://parthasarathy27.github.io/OnlineGameShopping-Website/index.html)  
 
-## Features
+---
 
-### 1. Three Web Pages
+## **Repository**  
 
-- Page 1: Displays a list of products with their images and prices, allowing users to add products to their cart. After selecting products, users can navigate to the next page.
-  
-- Page 2: A second product selection page, similar to Page 1 but with different products. It maintains the session and adds the newly selected items' cost to the previous total.
-  
-- Page 3: The final page that displays the total amount of all selected products. It provides a "Checkout" button for users to complete their purchase.
+Find the complete source code at:  
 
-### 2. Cart Management
+[**GitHub Repository**](https://github.com/parthasarathy27/OnlineGameShopping-Website)  
 
-- Products can be added to the cart, and the total amount is dynamically updated across the pages using session and cookies.
-  
-- Cart data persists across pages using session and cookies, enabling users to continue shopping and adding products.
+---
 
-### 3. User Authentication
+## **Features**  
 
-- Login Page: Users can enter their credentials to access the shopping pages.
-  
-- Logout Functionality: Users can log out, which clears the session and cookies, ensuring secure navigation.
+### **1. User Authentication**  
+- **Login Page:** Users enter credentials to access the shopping pages.  
+- **Logout Functionality:** Clears session and cookies for security.  
 
-## File Structure
+### **2. Cart Management**  
+- Products can be added to the cart, and the total amount updates dynamically.  
+- Cart data persists across pages using **session and cookies**.  
 
+### **3. Multi-Page Shopping Experience**  
+
+The website consists of four main pages:  
+
+- **Page 1:** Displays a list of products with images and prices. Users can add products to their cart and move to the next page.  
+- **Page 2:** Another product selection page with different items. The session maintains cart data across pages.  
+- **Page 3:** Displays the total amount of selected products and provides a "Checkout" button.  
+- **Page 4 (Checkout):** Final page where users can complete their purchase.  
+
+---
+
+## **File Structure**  
+
+```
 /OnlineShop/
-│── index.html           (Login/Register Page)
-│── page1.html           (Product Selection Page 1)
-│── page2.html           (Product Selection Page 2)
-│── page3.html           (Product Selection Page 3)
-│── page4.html           (Product Selection Page 4 - Checkout)
-│── styles.css           (Global Stylesheet)
-│── assets/              (Images, Icons, etc.)
+│── index.html           # Login/Register Page
+│── page1.html           # Product Selection Page 1
+│── page2.html           # Product Selection Page 2
+│── page3.html           # Product Selection Page 3
+│── page4.html           # Checkout Page
+│── styles.css           # Global Stylesheet
+│── assets/              # Images, Icons, etc.
 │   ├── logo.jpg
 │   ├── product1.jpg
 │   ├── product2.jpg
 │── js/
-│   ├── auth.js          (User Authentication)
-│   ├── cart.js          (Cart Management)
-│   ├── session.js       (Session Handling)
-│── README.md            (Project Overview & Setup Instructions)
+│   ├── auth.js          # User Authentication
+│   ├── cart.js          # Cart Management
+│   ├── session.js       # Session Handling
+│── README.md            # Project Overview & Setup Instructions
+```
 
+---
 
-## Technologies Used
+## **Technologies Used**  
 
-- HTML: For structuring the web pages.
-- CSS: For styling the website and making it responsive.
-- JavaScript: For implementing session and cookies to manage cart data and user authentication.
+- **HTML** → Structuring the web pages  
+- **CSS** → Styling and making the website responsive  
+- **JavaScript** → Handling session, cookies, cart management, and authentication  
 
-## Setup Instructions
+---
 
-To run the project locally:
+## **Setup Instructions**  
 
-1. Clone the repository:
-   bash
+Follow these steps to run the project locally:  
+
+1. **Clone the repository:**  
+   ```bash
    git clone https://github.com/parthasarathy27/OnlineGameShopping-Website.git
-   
+   ```  
 
-2. Navigate to the project directory:
-   bash
+2. **Navigate to the project directory:**  
+   ```bash
    cd OnlineGameShopping-Website
-   
+   ```  
 
-3. Open the index.html file in your preferred browser to start the application.
+3. **Open `index.html` in a web browser to start the application.**  
 
-## How It Works
+---
 
-1. Login Page: 
-   - Users sign in to access the shopping pages. Login credentials are validated to start a session.
-  
-2. Product Selection Pages (Page 1, Page 2, Page 3): 
-   - Users can browse through products, add them to their cart, and proceed through the pages. The cart is managed with JavaScript using session and cookies to store the selected products and their prices.
-  
-3. Checkout:
-   - On the third page, users can see the total amount for all selected products and click on the "Checkout" button to complete the shopping process.
+## **How It Works**  
 
-4. Logout: 
-   - When the user logs out, the session and cookies are cleared, and the user is redirected to the login page.
-'''
+1. **Login Page:**  
+   - Users sign in to access shopping pages.  
+   - Credentials are validated to start a session.  
+
+2. **Product Selection Pages (Page 1, Page 2, Page 3):**  
+   - Users browse products, add them to their cart, and proceed to the next pages.  
+   - The cart is managed using JavaScript with session and cookies to store selected products and their prices.  
+
+3. **Checkout Page (Page 4):**  
+   - Displays the total amount for all selected products.  
+   - A "Checkout" button allows users to complete their purchase.  
+
+4. **Logout:**  
+   - When the user logs out, the session and cookies are cleared.  
+   - The user is redirected to the login page for security.  
+
+---
