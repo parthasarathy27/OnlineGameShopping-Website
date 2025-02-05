@@ -44,7 +44,8 @@ The source code for the project is available at the following GitHub repository:
 │── index.html           (Login/Register Page)
 │── page1.html           (Product Selection Page 1)
 │── page2.html           (Product Selection Page 2)
-│── page3.html           (Product Selection Page 3 - Checkout)
+│── page3.html           (Product Selection Page 3)
+│── page4.html           (Product Selection Page 4 - Checkout)
 │── styles.css           (Global Stylesheet)
 │── assets/              (Images, Icons, etc.)
 │   ├── logo.jpg
